@@ -4,6 +4,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import counterSlice from "./features/counterSlice";
 
 import postSlice from "./features/postsSlice";
+import authSlice from "./features/AuthenticationSlice";
 
 
 const store = configureStore({
@@ -14,6 +15,8 @@ const store = configureStore({
         counter:counterSlice.reducer,
 
         posts:postSlice.reducer,
+
+        auth:authSlice.reducer
 
     }
 
